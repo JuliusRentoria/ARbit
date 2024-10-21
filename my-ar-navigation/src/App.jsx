@@ -1,12 +1,20 @@
-import ARMarker from "./ARMarker";
+// src/App.jsx
+import { useState } from "react";
+import Onboarding from "./components/Onboarding";
+import ARScene from "./components/ARScene";
 
-function App() {
+const App = () => {
+  const [inARScene, setInARScene] = useState(false);
+
   return (
-    <div className="App">
-      <h1>AR Navigation</h1>
-      <ARMarker />
+    <div>
+      {inARScene ? (
+        <ARScene />
+      ) : (
+        <Onboarding onStart={() => setInARScene(true)} />
+      )}
     </div>
   );
-}
+};
 
 export default App;

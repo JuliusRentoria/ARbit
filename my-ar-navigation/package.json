@@ -11,7 +11,12 @@
   },
   "dependencies": {
     "@types/three": "^0.168.0",
+    "aframe": "^1.6.0",
+    "aframe-ar": "^0.2.1-a",
     "ar.js": "^2.2.2",
+    "leaflet": "^1.9.4",
+    "mapbox-gl": "^3.7.0",
+    "pathfinding": "^0.4.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "three": "^0.168.0"
